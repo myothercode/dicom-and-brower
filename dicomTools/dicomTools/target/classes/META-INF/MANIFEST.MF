@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1373447711392
+Build-Jdk: 1.6.0_35
+Built-By: Chace.Cai
+Bundle-ManifestVersion: 2
+Bundle-Name: dicomTools
+Bundle-SymbolicName: org.dcm4che2.dicomTools
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.dcm4che.pojo;version="1.0.0.SNAPSHOT",com.dcm4che.te
+ st;version="1.0.0.SNAPSHOT",com.dcm4che.tools;uses:="org.dcm4che2.io";v
+ ersion="1.0.0.SNAPSHOT"
+Import-Package: org.apache.commons.cli;version="[1.2,2)",org.dcm4che2.da
+ ta;version="[2.0,3)",org.dcm4che2.io;version="[2.0,3)",org.dcm4che2.uti
+ l;version="[2.0,3)"
+Tool: Bnd-2.1.0.20130426-122213
