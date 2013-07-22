@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+ PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID" version="2.5">
+
+ 	<!--<servlet>
+		<servlet-name>wado</servlet-name>
+		<display-name>WADO - Web Access to DICOM Persistent Objects</display-name>
+		<servlet-class>org.dcm4chex.wado.web.WADOServlet</servlet-class>
+	</servlet>-->
+    <!-- CAS 相关配置文件-->
+    <filter>
+        <filter-name>CAS Single Sign Out Filter</filter-name>
+        <filter-class>org.jasig.cas.client.session.SingleSignOutFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>CAS Authentication Filter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <init-param>
+            <param-name>targetBeanName</param-name>
+            <param-value>casAuthenticationFilter</param-value>
+        </init-param>
+    </filter>
+    <filter>
+        <filter-name>CAS Validation Filter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <init-param>
+            <param-name>targetBeanName</param-name>
+            <param-value>casValidationFilter</param-value>
+        </init-param>
+    </filter>
+    <filter>
+        <filter-name>CAS HttpServletRequestWrapperFilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <init-param>
+            <param-name>targetBeanName</param-name>
+            <param-value>casHttpServletRequestWrapperFilter</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>CAS Single Sign Out Filter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>CAS Authentication Filter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>CAS Validation Filter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>CAS HttpServletRequestWrapperFilter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
+    <!-- CAS 配置文件结束 -->
+
+    <!-- spring -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath*:applicationContext.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <!-- the first must set characterset else wrong code may occur must be first!!!!! -->
+    <filter>
+        <filter-name>characterEncodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>characterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>sessionVOFilter</filter-name>
+        <filter-class>in.raster.oviyam.filter.SessionModelFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>sessionVOFilter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
+
+
+    <servlet>
+        <servlet-name>oviyam</servlet-name>
+        <servlet-class>in.raster.oviyam.servlet.ServletToBeanProxy</servlet-class>
+    </servlet>
+
+	<!--<servlet>
+		<servlet-name>oviyam</servlet-name>
+		<servlet-class>in.raster.oviyam.servlet.Validator</servlet-class>
+	</servlet>-->
+
+	<servlet>
+		<servlet-name>DcmImage</servlet-name>
+		<servlet-class>in.raster.oviyam.servlet.DcmImage</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>update</servlet-name>
+		<servlet-class>in.raster.oviyam.servlet.UpdateServerConfig</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>serverconfig</servlet-name>
+		<servlet-class>in.raster.oviyam.servlet.ServerConfig</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>DICOMDataset</servlet-name>
+		<servlet-class>in.raster.oviyam.servlet.DICOMDataset</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>DcmWindowLevel</servlet-name>
+		<servlet-class>in.raster.oviyam.servlet.DcmWindowLevel</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>DcmAttributeRetrieve</servlet-name>
+		<servlet-class>in.raster.oviyam.servlet.DcmAttributeRetrieve</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>MultiFrames</servlet-name>
+		<servlet-class>in.raster.oviyam.servlet.MultiFrames</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MultiFrames</servlet-name>
+		<url-pattern>/MFrames</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DcmWindowLevel</servlet-name>
+		<url-pattern>/DcmWL</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DcmAttributeRetrieve</servlet-name>
+		<url-pattern>/DcmAttr</url-pattern>
+	</servlet-mapping>
+
+	<!--<servlet-mapping>
+		<servlet-name>wado</servlet-name>
+		<url-pattern>/wado</url-pattern>
+	</servlet-mapping>-->
+
+	<servlet-mapping>
+		<servlet-name>oviyam</servlet-name>
+		<url-pattern>/oviyam.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DcmImage</servlet-name>
+		<url-pattern>/Image.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>update</servlet-name>
+		<url-pattern>/update.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>serverconfig</servlet-name>
+		<url-pattern>/serverconfig.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DICOMDataset</servlet-name>
+		<url-pattern>/DICOMDataset.do</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <login-config>
+    	<auth-method>FORM</auth-method>
+    	<form-login-config>
+    	<form-login-page>/login.jsp</form-login-page>
+    	<form-error-page>/error.jsp</form-error-page>
+    	</form-login-config>
+    </login-config>
+
+</web-app>
+
