@@ -1,0 +1,58 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/xmltooling-1.3.2-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cxf-services-ws-discovery-api-2.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/wss4j-1.6.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/AppcenterBHMLClientJar-1.8.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mssqlserver.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/asm-3.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cxf-services-wsn-core-2.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcore-4.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mina-core-2.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cxf-2.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpclient-4.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/wsdl4j-1.6.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/antlr-2.7.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/xmlschema-core-2.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/xml-resolver-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/woodstox-core-asl-4.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/oauth-provider-20100527.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/opensaml-2.5.1-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/msutil.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/sqljdbc4-3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.ws.rs-api-2.0-m10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/xmlsec-1.5.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cxf-xjc-boolean-2.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/openws-1.4.2-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cxf-xjc-ts-2.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cxf-xjc-runtime-2.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/velocity-1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpasyncclient-4.0-beta3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/geronimo-servlet_3.0_spec-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/js-1.7R2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cxf-services-wsn-api-2.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-codec-1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-httpclient-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/neethi-3.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/oauth-20100527.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/geronimo-javamail_1.4_spec-1.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/msv-core-2011.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cxf-services-sts-core-2.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/odbc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/stax2-api-3.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/geronimo-jms_1.1_spec-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cxf-xjc-bug671-2.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcore-nio-4.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cxf-xjc-dv-2.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/msbase.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
