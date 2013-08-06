@@ -1,0 +1,54 @@
+<component name="libraryTable">
+  <library name="aopalliance-1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/asm-3.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/aspectjrt-1.6.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/aspectjweaver-1.6.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-dbcp-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-lang-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-pool-1.5.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-api-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-bindings-soap-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-bindings-xml-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-core-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-databinding-jaxb-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-frontend-jaxws-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-frontend-simple-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-transports-http-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-ws-addr-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-ws-policy-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/geronimo-javamail_1.4_spec-1.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/jboss-logging-3.1.0.CR2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/log4j-1.2.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/mybatis-3.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/mybatis-spring-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/neethi-3.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ojdbc6-11.2.0.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/slf4j-api-1.6.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/slf4j-log4j12-1.6.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-aop-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-asm-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-beans-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-context-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-context-support-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-core-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-expression-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-jdbc-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-tx-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-web-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-xml-2.1.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/stax2-api-3.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/validation-api-1.0.0.GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/woodstox-core-asl-4.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/wsdl4j-1.6.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/xml-resolver-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/xmlschema-core-2.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
