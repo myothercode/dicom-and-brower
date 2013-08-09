@@ -139,10 +139,10 @@
 
 <div id="infoButton" class="toolBarButton" onclick="loadDataSet('','');"
 	onmouseout="clearzoom()">
-<div class="toolBarText toolBarTextNonMode">DICOM Info</div>
+<div class="toolBarText toolBarTextNonMode">DICOM 信息</div>
 </div>
 
-<div id="configButton" class="toolBarButton"
+<div style="display: none" id="configButton" class="toolBarButton"
 	onclick="keynav=0; configServer('${applicationScope.serverConfig.aeTitle}','${applicationScope.serverConfig.hostName}','${applicationScope.serverConfig.port}','${applicationScope.serverConfig.wadoPort}'); document.getElementById('configPane').style.visibility='visible'; new Effect.SlideDown('configPane',{duration:0.5});">
 	<div class="toolBarText toolBarTextNonMode">Config</div>
 </div>
@@ -152,33 +152,33 @@
 </div>
 
 <div id="presetButton" class="toolBarButton" onclick="popupQueryOptions();">
-	<div class="toolBarText toolBarTextNonMode" id="presetText">Preset</div>
+	<div class="toolBarText toolBarTextNonMode" id="presetText">预置</div>
 </div>
 
 <div id="resetButton" class="toolBarButton" onclick="resetAll();">
-	<div class="toolBarText toolBarTextNonMode">Reset</div>
+	<div class="toolBarText toolBarTextNonMode">复位</div>
 </div>
 
 <div id="moveButton" class="toolBarButton moveButton">
-	<div class="toolBarText" id="moveText">Move</div>
+	<div class="toolBarText" id="moveText">移动</div>
 </div>
 
 <div id="measureButton" class="measureButton toolBarButton">
-	<div class="toolBarText" id="measureText">Measure</div>
+	<div class="toolBarText" id="measureText">测量</div>
 </div>
 
 <div id="zoomButton" class="toolBarButton zoomButton">
-	<div class="toolBarText" id="zoomText">Zoom on</div>
+	<div class="toolBarText" id="zoomText">开启缩放</div>
 </div>
 
 <div id="zoomInButton" class="toolBarButton"
 	onmouseover="zoom(512,512,'picture','in');" onmouseout="clearzoom()">
-<div class="toolBarText">Zoom in</div>
+<div class="toolBarText">放大</div>
 </div>
 
 <div id="zoomOutButton" class="toolBarButton"
 	onmouseover="zoom(512,512,'picture','out');" onmouseout="clearzoom()">
-<div class="toolBarText">Zoom out</div>
+<div class="toolBarText">缩小</div>
 </div>
 </div>
 </div>
@@ -507,7 +507,7 @@
 </button>--%>
 <button class="pushSearch" type="submit" onclick="stopTimer();loadFile(); keynav=1;">
 <div class="outer">
-<div class="label">Search</div>
+<div class="label">查询按钮</div>
 </div>
 </button>
 <%--<button class="pushCancel" type="reset" onclick="cancelButtonClicked();">
@@ -660,6 +660,12 @@
 <div id="dataSetHolder"></div>
 </div>
 </center>
+
+<script type="text/javascript">
+    window.onload=function(){
+        stopTimer();loadFile(); keynav=1;
+    }
+</script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 <configuration>
     <server>
         <aetitle>DCM4CHEE</aetitle>
-        <hostname>localhost</hostname>
+        <hostname>192.168.1.71</hostname>
         <port>11112</port>
         <wadoport>8081</wadoport>
         <dcmprotocol>DICOM</dcmprotocol>

@@ -43,9 +43,7 @@
 * ***** END LICENSE BLOCK ***** */ 
 package in.raster.oviyam.servlet;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.URL;
 
 import javax.servlet.ServletException;
@@ -69,6 +67,9 @@ public class DICOMDataset extends HttpServlet{
 	
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
+        response.setContentType("text/html;charset=utf-8");
+        response.setCharacterEncoding("utf-8");
+        request.setCharacterEncoding("utf-8");
 		// Reads the parameters from the request.
 		String dataSetURL = request.getParameter("datasetURL");	
 		String contentType = request.getParameter("contentType");
@@ -81,21 +82,19 @@ public class DICOMDataset extends HttpServlet{
 		
 		InputStream resultInStream = null;
 		//Gets the response's outputStream instance to write a html page in the response.
-		OutputStream resultOutStream = response.getOutputStream();
-	
+
+        OutputStream resultOutStream = response.getOutputStream();
+
 		try{
-			//Initialize the URL for the requested page.
+
 			URL url = new URL(dataSetURL);
-			//opens the inputStream of the URL.
 			resultInStream = url.openStream();
-			//Initialize the byte array object to read and hold the bytes form the URL stream.
 			byte[] buffer = new byte[4096];
 			int bytes_read;
-			//writes the bytes into the response's output stream.
 			while((bytes_read=resultInStream.read(buffer)) != -1){
 				resultOutStream.write(buffer, 0, bytes_read);
 			}
-			//Closing all the input and output streams.
+
 			resultOutStream.flush();
 			resultOutStream.close();
 			resultInStream.close();

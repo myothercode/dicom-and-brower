@@ -49,24 +49,35 @@
 <%@taglib prefix="study" uri="/WEB-INF/tags/StudyInfo.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-
 <div id="tableContainer" class="TableContainer">
 <table id="queryResult"  class="queryResult">
 
 <thead class="fixedHeader">
 
-	<tr>
-		<td class="point" >NO</td>
-					
-					<td  title="Sort">Name</td>
-					<td  title="Sort">Patient ID</td>				
-					<td  title="Sort">Sex</td>
-					<td  title="Sort">Birth date</td>
-					<!--  <td>Study date</td>
-					<td>Modality</td>-->
-					<td  title="Sort">Ref. Physician</td>
-					
-	</tr>
+    <tr style="display: none">
+        <td class="point" >NO</td>
+
+        <td  title="Sort">Name</td>
+        <td  title="Sort">Patient ID</td>
+        <td  title="Sort">Sex</td>
+        <td  title="Sort">Birth date</td>
+        <!--  <td>Study date</td>
+        <td>Modality</td>-->
+        <td  title="Sort">Ref. Physician</td>
+
+    </tr>
+    <tr>
+        <td class="point" >序号</td>
+
+        <td  title="Sort">姓名</td>
+        <td  title="Sort">检查单号</td>
+        <td  title="Sort">性别</td>
+        <td  title="Sort">生日</td>
+        <!--<td>Study date</td>
+      <td>Modality</td>-->
+        <td  title="Sort">Ref. 医师</td>
+
+    </tr>
 
 </thead>
 

@@ -1114,7 +1114,7 @@
                   dataType: 'json',
                   cache: false,
                   success: function(data){
-                   try{document.getElementById('patientDisName').innerHTML=data.patientName}catch(e){}
+                   //try{document.getElementById('patientDisName').innerHTML=data.patientName}catch(e){}
                     latestAjaxRequest = null;
                     if (data !== null){
                         requestSemaphore--;

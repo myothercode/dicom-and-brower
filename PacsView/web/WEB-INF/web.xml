@@ -13,7 +13,7 @@
 		<servlet-class>org.dcm4chex.wado.web.WADOServlet</servlet-class>
 	</servlet>-->
     <!-- CAS 相关配置文件-->
-    <filter>
+    <!--<filter>
         <filter-name>CAS Single Sign Out Filter</filter-name>
         <filter-class>org.jasig.cas.client.session.SingleSignOutFilter</filter-class>
     </filter>
@@ -57,7 +57,7 @@
         <filter-name>CAS HttpServletRequestWrapperFilter</filter-name>
         <url-pattern>*.do</url-pattern>
     </filter-mapping>
-    <!-- CAS 配置文件结束 -->
+    &lt;!&ndash; CAS 配置文件结束 &ndash;&gt;-->
 
     <!-- spring -->
     <context-param>
@@ -81,14 +81,14 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    <filter>
+    <!--<filter>
         <filter-name>sessionVOFilter</filter-name>
         <filter-class>in.raster.oviyam.filter.SessionModelFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>sessionVOFilter</filter-name>
         <url-pattern>*.do</url-pattern>
-    </filter-mapping>
+    </filter-mapping>-->
 
 
     <servlet>

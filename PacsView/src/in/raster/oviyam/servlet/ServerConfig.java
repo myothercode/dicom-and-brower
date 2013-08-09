@@ -94,7 +94,7 @@ public class ServerConfig extends HttpServlet {
 		} catch (Exception e) {
 			log.error("Unable to create oviyam-config.xml ",e);
 		}
-		response.sendRedirect("oviyam");		
+		response.sendRedirect("oviyam.do");
 	}
 
 	

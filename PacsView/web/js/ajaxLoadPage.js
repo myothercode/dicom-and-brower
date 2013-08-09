@@ -44,6 +44,7 @@ var directSeries=0;
 	function loadpage(page_request, containerid, url){
 		if (page_request.readyState == 4 && (page_request.status==200 || window.location.href.indexOf("http")==-1)){
 			var pr = page_request.responseText;
+
 			if(pr.indexOf("wado?") >=0){
 			    if (document.getElementById(containerid)){
 				    document.getElementById(containerid).innerHTML = pr.replace(/wado?/g, "/wado");

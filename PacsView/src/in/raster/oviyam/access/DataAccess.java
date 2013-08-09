@@ -17,4 +17,11 @@ public interface DataAccess {
     public SessionModel findSessionInfoByLoginId(String loginId);
     public boolean checkCheckId(String loginId,String pid);
     public void addPacsLog(PacsQueryLogModel pl);
+    public boolean checsIsExist(String pid);
+
+    /*调用pacs服务器接口将指定路径的dcm文件存入pacs*/
+    public String addDicom(String path);
+
+    /*调用应用中心接口获取报告地址*/
+    public String getReportAddress(String pid);
 }

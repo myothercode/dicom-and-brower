@@ -57,6 +57,7 @@ import in.raster.oviyam.model.PacsQueryLogModel;
 import in.raster.oviyam.utils.AE;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
@@ -106,17 +107,43 @@ public class Validator extends HttpServlet{
 
 	@Override
 	public void doGet(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
-        /*判断当前登录人是否有权限查看指定的检验id*/
-        AttributePrincipal principal = (AttributePrincipal) request.getUserPrincipal();
-        String loginId=principal.getName();
-        String pid=(String)request.getParameter("PatientID");
-        if(pid==null || "".equals(pid))return;
-        boolean b=dataAccess.checkCheckId(loginId,pid);
-        if(!b)return;
-        PacsQueryLogModel pqlm = new PacsQueryLogModel();
+        response.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
+        PrintWriter out = response.getWriter();
+
+        /*AttributePrincipal principal = (AttributePrincipal) request.getUserPrincipal();
+        String loginId=principal.getName();*/
+
+         /*判断参数是否为空*/
+        String pid=(String)request.getParameter("PatientID").trim();
+        if(pid==null || "".equals(pid)){
+            out.println("参数不能为空!");
+            out.close();
+            return;
+        }
+
+        /*根据申请单号获取报告号路径*/
+        String r=dataAccess.getReportAddress(pid);
+        /*将已经上传的dcm文件加入到pacs服务器*/
+        //String r=dataAccess.addDicom("x");
+
+        /*判断该检验是否存在*/
+        Boolean a = dataAccess.checsIsExist(pid);
+        if(!a){
+            out.println("还没有影像报告!");
+            out.close();
+            return;
+        }
+
+        /*审核当前登录人是否有查看权限*/
+        //boolean b=dataAccess.checkCheckId(loginId,pid);
+        //if(!b)return;
+
+        /*记录日志*/
+        /*PacsQueryLogModel pqlm = new PacsQueryLogModel();
         pqlm.setApplicationId(pid);
         pqlm.setDoctorId(loginId);
-        dataAccess.addPacsLog(pqlm);
+        dataAccess.addPacsLog(pqlm);*/
 
 		AE ae;
 		ServletContext servletContext=getServletContext();
@@ -180,7 +207,7 @@ public class Validator extends HttpServlet{
 					request.getRequestDispatcher("oviyam7.jsp").forward(request, response);
 				}
 			}	
-		
+
 		}catch(Exception e){
 			log.error(e.getMessage());
 			

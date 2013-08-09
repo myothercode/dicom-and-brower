@@ -16,6 +16,7 @@
 
     <import
             resource="classpath*:applicationContext-cas.xml" />
+    <import resource="classpath*:applicationContext-client.xml"/>
 
     <bean id="propsConfigurer"
           class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -30,7 +31,7 @@
     </bean>
 
 
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+    <!--<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">
         <property name="driverClassName" value="${datasource.driverClassName}"/>
         <property name="defaultAutoCommit" value="${datasource.defaultAutoCommit}"/>
@@ -46,7 +47,7 @@
     <bean id="jdbcTemplate"
           class="org.springframework.jdbc.core.JdbcTemplate">
         <property name="dataSource" ref="dataSource"/>
-    </bean>
+    </bean>-->
 
 
 
