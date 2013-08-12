@@ -1,5 +1,6 @@
 package appcenter.pasc.handle;
 
+import appcenter.logHelper.LogForError;
 import appcenter.logHelper.LogForInfo;
 import appcenter.pasc.domain.DBResource;
 import appcenter.pasc.domain.ShareDBResource;
@@ -18,10 +19,9 @@ import org.apache.commons.logging.LogFactory;
 
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
@@ -71,9 +71,18 @@ public class DataBaseSendThread extends Thread {
 		uploadPacsFileRequestTO.setDataHandler(new DataHandler(new DataSource() {
 			@Override
 			public InputStream getInputStream() throws IOException {
-				ReportImageHandle rih = new ReportImageHandle();
-				rih.writeInfo2Image(reportStr, patientID);
-				return new ByteArrayInputStream(rih.writeInfo2Image(reportStr, patientID).toByteArray());
+				ByteArrayOutputStream arrayInputStream=new ByteArrayOutputStream();
+				try {
+					Method method = BaseConfig.serverAnalyze.getMethod(BaseConfig.analyzeMethod, String.class,String.class);
+					arrayInputStream=(ByteArrayOutputStream)method.invoke(null, reportStr,patientID);//调用解析的配置方法
+				} catch(NoSuchMethodException e) {
+					LogForError.logError(e);
+				} catch(InvocationTargetException e) {
+					LogForError.logError(e);
+				} catch(IllegalAccessException e) {
+					LogForError.logError(e);
+				}
+				return new ByteArrayInputStream(arrayInputStream.toByteArray());
 			}
 
 			@Override

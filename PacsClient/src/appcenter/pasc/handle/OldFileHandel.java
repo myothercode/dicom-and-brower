@@ -33,12 +33,7 @@ public class OldFileHandel {
 
 			if(children.length>0){
 				for(File fi : children){
-					File[] isFile=fi.listFiles(new FileFilter() {
-						@Override
-						public boolean accept(File file) {
-							return file.getAbsolutePath().endsWith("doc") && !file.getName().startsWith("~$");
-						}
-					});
+					File[] isFile=fi.listFiles();
 					if(isFile.length==1){
 						ShareFile shareFile=new ShareFile();
 						shareFile.setFile(isFile[0]);

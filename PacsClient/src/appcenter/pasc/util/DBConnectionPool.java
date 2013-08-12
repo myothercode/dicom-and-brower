@@ -40,6 +40,12 @@ public class DBConnectionPool {
 		} else if(BaseConfig.dbType.equalsIgnoreCase("sqlServer") && BaseConfig.dbConnectType.equals("odbc")) {
 			driverName = "sun.jdbc.odbc.JdbcOdbcDriver";
 			url = "jdbc:odbc:" + BaseConfig.dbName;
+		} else if(BaseConfig.dbType.equalsIgnoreCase("access") && BaseConfig.dbConnectType.equals("odbc")) {
+				driverName = "sun.jdbc.odbc.JdbcOdbcDriver";
+				url = "jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};DBQ=" + BaseConfig.dbName;
+		} else if(BaseConfig.dbType.equalsIgnoreCase("fireBird") && BaseConfig.dbConnectType.equals("jdbc")) {
+				driverName = "org.firebirdsql.jdbc.FBDriver";
+				url = "jdbc:firebirdsql://"+BaseConfig.dbUrl+"/" + BaseConfig.dbName;
 		}
 		try {
 			Class.forName(driverName);

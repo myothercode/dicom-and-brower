@@ -11,6 +11,7 @@ import appcenter.pasc.util.DBConnectionPool;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
+import java.io.UnsupportedEncodingException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -51,15 +52,18 @@ public class DataBaseHandel extends Thread {
 			Connection conn = DBConnectionPool.getConnection();
 			LogForInfo.logInfo("取得数据库连接!");
 			PreparedStatement st = getConfigPreparedStatement(conn);
-			LogForInfo.logInfo("PreparedStatement is "+st==null?"null":"right!");
+			LogForInfo.logInfo("PreparedStatement is "+(st==null?"null":"right!"));
 			if(st != null) {
 				ResultSet set = st.executeQuery();
 				while(set.next()) {
-					DBResource dbResource = new DBResource();
-					dbResource.setPatientID(set.getString("PatientID"));
-					dbResource.setReportStr(set.getString("Report"));
-					ShareDBResource.dbResources.add(dbResource);
-					LogForInfo.logInfo("查询出PatientID="+dbResource.getPatientID());
+					String  patientID= set.getString("PatientID");
+					if(patientID.length()==8){
+						DBResource dbResource = new DBResource();
+						dbResource.setPatientID(patientID);
+						dbResource.setReportStr(set.getString("Report"));
+						ShareDBResource.dbResources.add(dbResource);
+						LogForInfo.logInfo("查询出PatientID="+dbResource.getPatientID());
+					}
 				}
 				set.close();
 				st.close();
@@ -77,21 +81,22 @@ public class DataBaseHandel extends Thread {
 		if(firstRun) {
 			LogForInfo.logInfo("首次运行构造参数!");
 			try {
-				st = conn.prepareStatement(BaseConfig.sql);
+				st = conn.prepareStatement(new String(BaseConfig.sql.getBytes(),"GBK"));
 				String[] dateStr=BaseConfig.startTime.split(" ");
-				st.setString(1, dateStr[0]);
-				st.setString(2, dateStr[1]);
+				st.setString(1, new String(dateStr[0].getBytes(),"GBK"));
+				st.setString(2, new String(dateStr[0].getBytes(),"GBK"));
+				st.setString(3, new String(dateStr[1].getBytes(),"GBK"));
 			} catch(SQLException e) {
 				LogForError.logError(e);
+			} catch(UnsupportedEncodingException e) {
+				e.printStackTrace();
 			}
 			firstRun = false;
 		} else {
 			LogForInfo.logInfo("非首次运行构造参数!");
 			try {
 				st = conn.prepareStatement(BaseConfig.otherSql);
-				String[] dateStr=BaseConfig.startTime.split(" ");
-				st.setString(1, dateStr[0]);
-				st.setInt(2, -Integer.parseInt(BaseConfig.runTime));
+				st.setInt(1, -Integer.parseInt(BaseConfig.runTime));
 			} catch(SQLException e) {
 				LogForError.logError(e);
 			}

@@ -1,6 +1,5 @@
 package appcenter.pasc.domain;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -11,5 +10,5 @@ import java.util.concurrent.CopyOnWriteArrayList;
  */
 public class ShareDBResource {
 	public static List<DBResource> dbResources=new CopyOnWriteArrayList<DBResource>();
-	public static List<DBResource> errorDbResources=new ArrayList<DBResource>();
+	public static List<DBResource> errorDbResources=new CopyOnWriteArrayList<DBResource>();
 }

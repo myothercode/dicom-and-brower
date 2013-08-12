@@ -1,12 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="pasclient" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="b45ec639-64f9-48bc-aaaf-773507f82c18" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PacsClient.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/appcenter/TESTTHREAD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/appcenter/pasc/handle/FileHandel.java" afterPath="$PROJECT_DIR$/src/appcenter/pasc/handle/FileHandel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/appcenter/pasc/handle/HandelMain.java" afterPath="$PROJECT_DIR$/src/appcenter/pasc/handle/HandelMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/analyze.properties" afterPath="$PROJECT_DIR$/config/analyze.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/file.properties" afterPath="$PROJECT_DIR$/config/file.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/server.properties" afterPath="$PROJECT_DIR$/config/server.properties" />
     </list>
     <ignored path="PacsClient.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/*.regexp" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1374731862870" ignored="false" />
+    <file path="/*.regexp" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376273063846" ignored="false" />
+    <file path="/TEST.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376024546066" ignored="false" />
+    <file path="/DataBaseSendThread.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1374800821444" ignored="false" />
+    <file path="/fragment.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376270289037" ignored="false" />
+    <file path="/serviceConfig.properties" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375340801108" ignored="false" />
+    <file path="E:/dicom/dcm4chee-2.14.7-src/dcm4jboss-wado/src/java/org/dcm4chex/wado/mbean/WADOSupport.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1374831030333" ignored="false" />
+    <file path="/WADOSupport.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1374831028187" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBPIHWeb/src/main/webapp/js/order/doctororder/doctorOrderNew.js" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376276775842" ignored="false" />
+    <file path="/doctorOrderNew.js" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376026589700" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/PacsView/src/conf/oviyam-config.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375424188866" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/PacsView/src/in/raster/oviyam/servlet/ServerConfig.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375154695992" ignored="false" />
+    <file path="/DicomQueue.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376009328667" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBPIHWeb/src/main/java/com/appcenter/bpih/admission/patient/action/PatientListAction.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375169356180" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBPIHJar/src/main/java/com/appcenter/bpih/admission/register/service/impl/RegisterServiceImpl.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375169356180" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBPIHJar/src/main/java/com/appcenter/bpih/order/doctororder/service/impl/DoctorOrderServiceImpl.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375169356180" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBPIHJar/src/main/java/com/appcenter/bpih/order/orderdispose/service/impl/UploadOrderServiceImpl.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376272675578" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/com/yuxi-healthcare/appcenter/AppcenterInfrastructureJar/1.11.0-SNAPSHOT/AppcenterInfrastructureJar-1.11.0-SNAPSHOT.jar!/META-INF/maven/com.yuxi-healthcare.appcenter/AppcenterInfrastructureJar/pom.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375170464838" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/com/yuxi-healthcare/appcenter/AppcenterInfrastructureJar/1.11.0-SNAPSHOT/AppcenterInfrastructureJar-1.11.0-SNAPSHOT.jar!/META-INF/AppcenterInfrastructureJar/mybatis-config.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375170464838" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/com/yuxi-healthcare/appcenter/AppcenterInfrastructureJar/1.11.0-SNAPSHOT/AppcenterInfrastructureJar-1.11.0-SNAPSHOT.jar!/META-INF/AppcenterInfrastructureJar/spring/applicationContext-security.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375170464838" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/com/yuxi-healthcare/appcenter/AppcenterInfrastructureJar/1.11.0-SNAPSHOT/AppcenterInfrastructureJar-1.11.0-SNAPSHOT.jar!/META-INF/AppcenterInfrastructureJar/spring/applicationContext.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375170464838" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBCLSWeb/web/WEB-INF/web.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375170729280" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBCLSWeb/src/main/webapp/js/mzzl/mzzlfun3.js" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376034695141" ignored="false" />
+    <file path="/mzzlfun3.js" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375175317003" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBCLSWeb/src/main/java/com/appcenter/bcls/mzzl/action/MzzlQkysAction.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375175779163" ignored="false" />
+    <file path="/MzzlQkysAction.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375175761364" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBCLSWeb/src/main/resources/META-INF/AppcenterBCLSWeb/struts/mzzlQkys.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375175839644" ignored="false" />
+    <file path="/Dummy.txt" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376276740920" ignored="false" />
+    <file path="/SendFileMain.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376018838113" ignored="false" />
+    <file path="/RunableFactory.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375236477330" ignored="false" />
+    <file path="/getRunable.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375236903364" ignored="false" />
+    <file path="/GetCheckID.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376012691755" ignored="false" />
+    <file path="/FileValidThread.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375239340634" ignored="false" />
+    <file path="/GetRunable.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375338489862" ignored="false" />
+    <file path="/TESTTHREAD.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375249957238" ignored="false" />
+    <file path="/FileUtils.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375256192677" ignored="false" />
+    <file path="/FileUtil.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375345662953" ignored="false" />
+    <file path="/SendFile.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375264658359" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/dicomTools/dicomTools/pom.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375324192680" ignored="false" />
+    <file path="/GetDicomFile.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375955572295" ignored="false" />
+    <file path="/CreateServiceConUtil.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375318059545" ignored="false" />
+    <file path="/pom.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375768912281" ignored="false" />
+    <file path="/GetFailedDicomFile.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375339924867" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/PacsView/web/oviyam7.jsp" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375433125876" ignored="false" />
+    <file path="/oviyam7.jsp" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375433052942" ignored="false" />
+    <file path="/FileSendHandel.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375403313112" ignored="false" />
+    <file path="/BaseConfig.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376012961138" ignored="false" />
+    <file path="/HandelMain.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376032452034" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/PacsView/web/patient.jsp" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375414626174" ignored="false" />
+    <file path="/patient.jsp" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375414626174" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/PacsView/src/in/raster/oviyam/servlet/DICOMDataset.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375665044789" ignored="false" />
+    <file path="/DICOMDataset.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375664825256" ignored="false" />
+    <file path="E:/dicom/dcm4chee-2.14.7-src/dcm4jboss-wado/src/java/org/dcm4chex/wado/web/WADOServlet.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375423563457" ignored="false" />
+    <file path="/WADOServlet.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375423024696" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/PacsView/web/js/ajaxLoadPage.js" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375429152925" ignored="false" />
+    <file path="/ajaxLoadPage.js" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375428695523" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBPIHJar/src/main/java/com/appcenter/bpih/thirdpart/mi/service/impl/ZyYibaoServiceImpl.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375667704815" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBPIHWeb/src/main/webapp/js/order/doctororder/addDoctororder.js" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375667704815" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBPIHJar/src/main/java/com/appcenter/bpih/billing/settlement/service/impl/SettleServiceImpl.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376272675578" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBPIHJar/src/main/java/com/appcenter/bpih/common/util/Constants.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375667704815" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/PacsView/web/WEB-INF/web.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375668616201" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/PacsView/src/in/raster/oviyam/servlet/Validator.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376037463920" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/PacsView/web/js/oviyam7.js" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375750036977" ignored="false" />
+    <file path="E:/dicom/dcm4chee-2.14.7-src/savedicom/pom.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375755601621" ignored="false" />
+    <file path="E:/dicom/dcm4chee-2.14.7-src/savedicom/src/main/webapp/index.jsp" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375754710091" ignored="false" />
+    <file path="E:/dicom/dcm4chee-2.14.7-src/savedicom/src/main/webapp/WEB-INF/web.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375754710091" ignored="false" />
+    <file path="E:/dicom/savedicom/pom.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375769486365" ignored="false" />
+    <file path="E:/dicom/savedicom/src/main/java/dicom/server/AddDicomService.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375760141443" ignored="false" />
+    <file path="/AddDicomService.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375836231531" ignored="false" />
+    <file path="E:/dicom/savedicom/src/main/java/dicom/server/impl/AddDicomServiceImpl.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375767311876" ignored="false" />
+    <file path="/AddDicomServiceImpl.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375838539539" ignored="false" />
+    <file path="E:/dicom/savedicom/src/main/webapp/WEB-INF/web.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375767774913" ignored="false" />
+    <file path="E:/dicom/savedicom/src/main/resources/applicationContext-server.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375768199405" ignored="false" />
+    <file path="/applicationContext-server.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375837922758" ignored="false" />
+    <file path="E:/dicom/savedicom/web/WEB-INF/web.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375767582802" ignored="false" />
+    <file path="E:/dicom/adddicom/META-INF/application.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375769686627" ignored="false" />
+    <file path="E:/dicom/adddicom/web/WEB-INF/web.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375769992511" ignored="false" />
+    <file path="E:/dicom/adddicom/src/resource/applicationContext-server.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375838018915" ignored="false" />
+    <file path="E:/dicom/adddicom/src/java/dicom/server/impl/AddDicomServiceImpl.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375856894008" ignored="false" />
+    <file path="E:/dicom/adddicom/src/resource/applicationContext-client.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375777295446" ignored="false" />
+    <file path="E:/dicom/adddicom/src/java/dicom/client/TEST.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375781526564" ignored="false" />
+    <file path="/applicationContext-client.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375777293208" ignored="false" />
+    <file path="E:/dicom/adddicom/dicomclient/src/TEST.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375775046233" ignored="false" />
+    <file path="E:/dicom/cxftestclient/src/dicom/server.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375776791870" ignored="false" />
+    <file path="E:/dicom/cxftestclient/src/Test.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375783589343" ignored="false" />
+    <file path="E:/dicom/cxftestclient/src/applicationContext-client.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375778123805" ignored="false" />
+    <file path="E:/dicom/cxftestclient/out/production/cxftestclient/applicationContext-client.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375777501610" ignored="false" />
+    <file path="/Test.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375836242629" ignored="false" />
+    <file path="E:/dicom/adddicom/src/java/dicom/server/AddDicomService.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375782981589" ignored="false" />
+    <file path="E:/dicom/cxftestclient/src/log4j.properities" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375784061656" ignored="false" />
+    <file path="/log4j.properities" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375783922855" ignored="false" />
+    <file path="E:/dicom/cxftestclient/src/java/Test.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375836292268" ignored="false" />
+    <file path="E:/dicom/cxftestclient/src/resource/applicationContext-client.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375836279119" ignored="false" />
+    <file path="E:/dicom/cxftestclient/src/java/dicom/server/AddDicomService.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375836231531" ignored="false" />
+    <file path="/address.properties" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375838361818" ignored="false" />
+    <file path="E:/dicom/adddicom/src/resource/address.properties" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375838386750" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/PacsView/resource/applicationContext-server.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375857193984" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/PacsView/resource/applicationContext.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375857281112" ignored="false" />
+    <file path="/applicationContext.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1375857257668" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/dicomTools/dicomTools/src/main/java/com/dcm4che/tools/ModifyDcm.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376038741141" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/dicomTools/dicomTools/src/main/java/com/dcm4che/test/test.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376269937243" ignored="false" />
+    <file path="/file.properties" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376013822136" ignored="false" />
+    <file path="/server.properties" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376016066631" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/PacsView/resource/ais.properties" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376027453203" ignored="false" />
+    <file path="/ais.properties" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376025382913" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/PacsView/src/in/raster/oviyam/access/DataAccessImpl.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376030318843" ignored="false" />
+    <file path="/DataAccessImpl.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376030318843" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/PacsView/src/in/raster/oviyam/access/DataAccess.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376025781975" ignored="false" />
+    <file path="/DataAccess.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376025604799" ignored="false" />
+    <file path="/Validator.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376030649953" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBPIHWeb/src/main/resources/META-INF/AppcenterBPIHWeb/config/appcenter-bpih.properties" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376272181719" ignored="false" />
+    <file path="/appcenter-bpih.properties" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376041587163" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBCLSWeb/src/main/resources/META-INF/AppcenterBCLSWeb/config/appcenter-bcls.properties" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376041671216" ignored="false" />
+    <file path="/appcenter-bcls.properties" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376041671216" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterCP/src/main/java/com/appcenter/cp/module/session/service/impl/SessionServiceImpl.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376272675578" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterBPIHJar/src/main/java/com/appcenter/bpih/admission/patient/service/impl/PatientOperateServiceImpl.java" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376272675578" ignored="false" />
+    <file path="$PROJECT_DIR$/../Appcenter/AppcenterCP/src/main/resources/META-INF/AppcenterCP/spring/applicationContext.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376272675578" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/com/yuxi-healthcare/datacenter/DatacenterWSClientJar/1.12.0-SNAPSHOT/DatacenterWSClientJar-1.12.0-SNAPSHOT.jar!/META-INF/DatacenterWSClientJar/spring/applicationContext.xml" changelist="b45ec639-64f9-48bc-aaaf-773507f82c18" time="1376272675578" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +141,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="USE_COMPILE_SERVER" value="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -21,7 +151,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -56,6 +185,51 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/appcenter/pasc/handle/FileSendHandel.java" line="50" class="appcenter.pasc.handle.FileSendHandel" package="appcenter.pasc.handle">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/appcenter/pasc/analyze/FileAnalyze.java" line="42" class="appcenter.pasc.analyze.FileAnalyze" package="appcenter.pasc.analyze">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/appcenter/pasc/handle/FileHandel.java" line="28" class="appcenter.pasc.handle.FileHandel" package="appcenter.pasc.handle">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -65,31 +239,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CommonUtil.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ColorUltrasound.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/analyze/ColorUltrasound.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="32" selection-start="4494" selection-end="4503" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonUtil.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/util/CommonUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="227" column="36" selection-start="6125" selection-end="6125" vertical-scroll-proportion="0.0">
+            <state line="368" column="23" selection-start="9863" selection-end="9863" vertical-scroll-proportion="0.3323782">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataBaseSendThread.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/handle/DataBaseSendThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="78" selection-start="4474" selection-end="4474" vertical-scroll-proportion="0.46262625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateServiceConUtil.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/util/CreateServiceConUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="39" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#502#518#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -100,6 +263,28 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/config/serviceConfig.properties" />
+        <option value="$PROJECT_DIR$/src/appcenter/dicom/domain/DicomQueue.java" />
+        <option value="$PROJECT_DIR$/log/logInfo.log" />
+        <option value="$PROJECT_DIR$/src/appcenter/dicom/factory/GetCheckID.java" />
+        <option value="$PROJECT_DIR$/src/appcenter/dicom/factory/GetDicomFile.java" />
+        <option value="$PROJECT_DIR$/src/appcenter/pasc/util/BaseConfig.java" />
+        <option value="$PROJECT_DIR$/src/appcenter/pasc/util/CreateServiceConUtil.java" />
+        <option value="$PROJECT_DIR$/src/appcenter/dicom/factory/GetFailedDicomFile.java" />
+        <option value="$PROJECT_DIR$/config/file.properties" />
+        <option value="$PROJECT_DIR$/src/appcenter/dicom/handleDicom/SendFileMain.java" />
+        <option value="$PROJECT_DIR$/src/appcenter/TEST.java" />
+        <option value="$PROJECT_DIR$/src/appcenter/pasc/handle/FileSendHandel.java" />
+        <option value="$PROJECT_DIR$/src/appcenter/pasc/handle/HandelMain.java" />
+        <option value="$PROJECT_DIR$/config/analyze.properties" />
+        <option value="$PROJECT_DIR$/config/server.properties" />
+        <option value="$PROJECT_DIR$/src/appcenter/pasc/handle/FileHandel.java" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -133,8 +318,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -142,6 +325,24 @@
               <option name="myItemId" value="PacsClient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PacsClient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -164,36 +365,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PacsClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PacsClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appcenter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pasc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -212,14 +383,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="appcenter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pasc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="handle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -263,7 +426,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="monitor" />
+              <option name="myItemId" value="pasc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="analyze" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -277,31 +444,68 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="reportImage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="appcenter" />
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PacsClient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PacsClient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="logHelper" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="project.propCompiler" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/AppcenterBHMLClientJar-1.12.0-SNAPSHOT.jar!/" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="appcenter.dicom.domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\mycode\03 Implementation\healthcare\trunk\PacsClient\resource" />
+      <recent name="E:\mycode\03 Implementation\healthcare\trunk\Appcenter\dicomTools\out\artifacts\dcm4cheTools\dcm4cheTools.jar" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="appcenter.dicom.handle" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.HandelMain">
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -359,7 +563,56 @@
       <patterns />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="TEST" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="appcenter.TEST" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="PacsClient" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="HandelMain" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="appcenter.pasc.handle.HandelMain" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="PacsClient" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.TEST" />
+      <item index="1" class="java.lang.String" itemvalue="Application.HandelMain" />
+    </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -408,26 +661,27 @@
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28198075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3351724" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965517" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.71801925" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23959827" sideWeight="0.64" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2813793" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2137931" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -468,7 +722,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加是否启用dcm上传的配置" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -481,62 +735,207 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="增加是否启用dcm上传的配置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/handle/FileCheckUpdateHandel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="100" selection-start="2990" selection-end="2990" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/file.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="36" selection-start="134" selection-end="134" vertical-scroll-proportion="0.12984055" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/util/BaseConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="302" selection-end="302" vertical-scroll-proportion="-1.4428571">
+        <state line="208" column="85" selection-start="7981" selection-end="7981" vertical-scroll-proportion="0.6355353">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/handle/ReportImageHandle.java">
+    <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/handle/FileCopyHandel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="388" selection-end="388" vertical-scroll-proportion="0.15353535">
+        <state line="39" column="20" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.69014084" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/appcenter/dicom/factory/GetFailedDicomFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="99" selection-start="842" selection-end="842" vertical-scroll-proportion="-0.29284164" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/server.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="26" selection-start="638" selection-end="638" vertical-scroll-proportion="0.300905" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/handle/FileHandel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="10" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.027737226">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_35/jre/lib/rt.jar!/javax/activation/DataSource.class">
+    <entry file="file://$PROJECT_DIR$/src/appcenter/dicom/factory/GetDicomFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="163" selection-end="163" vertical-scroll-proportion="0.1919192">
+        <state line="82" column="0" selection-start="2811" selection-end="2811" vertical-scroll-proportion="0.027220631">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/appcenter/dicom/handleDicom/SendFileMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="43" selection-start="1860" selection-end="1860" vertical-scroll-proportion="0.40114614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/handle/HandelMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="0" selection-start="3050" selection-end="3050" vertical-scroll-proportion="0.027220631">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/analyze.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="103" selection-start="206" selection-end="206" vertical-scroll-proportion="0.054441262">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reportImage/template/CDU.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/analyze/FileAnalyze.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="74" selection-start="3647" selection-end="3647" vertical-scroll-proportion="-6.0429797">
+          <folding>
+            <element signature="e#1369#1375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/analyze/Radiologists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="468" selection-end="468" vertical-scroll-proportion="-1.7965616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/analyze/ColorUltrasound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="32" selection-start="4494" selection-end="4503" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/util/CommonUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="36" selection-start="6125" selection-end="6125" vertical-scroll-proportion="0.0">
+        <state line="368" column="23" selection-start="9863" selection-end="9863" vertical-scroll-proportion="0.3323782">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/AppcenterBHMLClientJar-1.8.0-SNAPSHOT.jar!/com/appcenter/bhml/core/pacs/dto/InsertExamReportRequestTO.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="11" selection-start="517" selection-end="517" vertical-scroll-proportion="0.44468084">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/util/CreateServiceConUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="39" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#502#518#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/appcenter/pasc/handle/DataBaseSendThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="78" selection-start="4474" selection-end="4474" vertical-scroll-proportion="0.46262625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>pasclient</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>PacsClient</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.19999997" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

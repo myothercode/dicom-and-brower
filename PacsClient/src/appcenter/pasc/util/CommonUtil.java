@@ -5,8 +5,13 @@ import appcenter.logHelper.LogForInfo;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.geom.Point2D;
+import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
+import java.awt.image.BufferedImageOp;
+import java.awt.image.ColorModel;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -222,6 +227,11 @@ public class CommonUtil {
 		return val;
 	}
 
+	/**
+	 * word文档判断最后一次修改的文件 并且排除临时文件
+	 * @param files
+	 * @return
+	 */
 	public static File getTheLastCreateFile(List<File> files) {
 		File returnFile = null;
 		if(files.size() == 1 && !files.get(0).getName().startsWith("~$")) {
@@ -232,7 +242,8 @@ public class CommonUtil {
 					returnFile = files.get(i);
 					continue;
 				}
-				if(returnFile.lastModified() < files.get(i).lastModified() && !files.get(i).getName().startsWith("~$")) {
+				if(returnFile.lastModified() < files.get(i).lastModified() && !files.get(i).getName()
+						.startsWith("~$")) {
 					returnFile = files.get(i);
 				}
 			}
@@ -246,14 +257,148 @@ public class CommonUtil {
 		try {
 			ByteArrayInputStream bi = oldObj;
 			ObjectInputStream oi = new ObjectInputStream(bi);
-			newObj = (ByteArrayInputStream)oi.readObject();//目标对象
+			newObj = (ByteArrayInputStream) oi.readObject();//目标对象
 		} catch(IOException e) {
-			e.printStackTrace();
+			LogForError.logError(e);
 		} catch(ClassNotFoundException e) {
-			e.printStackTrace();
+			LogForError.logError(e);
 		}
-
 		return newObj;
+	}
+
+	/** I\O读取图片为数组 */
+	public static byte[] image2Bytes(String imagePath) throws Exception {
+		BufferedInputStream in = new BufferedInputStream(new FileInputStream(imagePath));
+		ByteArrayOutputStream out = new ByteArrayOutputStream(in.available());
+
+		byte[] temp = new byte[in.available()];
+		int size = 0;
+		while((size = in.read(temp)) != -1) {
+			out.write(temp, 0, size);
+		}
+		in.close();
+
+		byte[] content = out.toByteArray();
+		out.close();
+		return content;
+	}
+
+	/**
+	 * 用于超长字符串截取
+	 *
+	 * @param resource 字符串源
+	 * @param splitStr 截取标识
+	 * @param count 每行字符数
+	 * @return
+	 */
+	public static List<String> cutString2Wrap(String resource, String splitStr, int count) {
+		List<String> itemList = new ArrayList<String>();
+		String[] item = resource.split(splitStr);
+		if(null != item) {
+			for(String value : item) {
+				//跳过空字符串
+				if(null == value || value.trim().length() == 0) {
+					continue;
+				}
+				//暂定每行储存40个字符
+				if(value.length() <= count) {
+					itemList.add(value);
+				} else {
+					int length = (int) Math.ceil(value.length() / count);//获取总换行数，向上取整
+					for(int i = 0;i < length;i++) {
+						String temp = null;
+						if(i == length - 1) {
+							temp = value.substring(i * count, value.length());
+						} else {
+							temp = value.substring(i * count, (i + 1) * count);
+						}
+						itemList.add(temp);
+					}
+				}
+			}
+		} else {
+			int length = (int) Math.ceil(resource.length() / count);
+			for(int i = 0;i < length;i++) {
+				String temp = null;
+				if(i == length - 1) {
+					temp = resource.substring(i * count, resource.length());
+				} else {
+					temp = resource.substring(i * count, (i + 1) * count);
+				}
+				itemList.add(temp);
+			}
+		}
+		return itemList;
+	}
+
+	/**
+	 * 在图片上写长字符串
+	 * @param graphics2D
+	 * @param resource 源数据
+	 * @param lineLength 一行数据的长度
+	 * @param wordHigh		单字的高度
+	 * @param baseHeight	基础高度
+	 * @param firstWordLeft 每行第一个字与左边的距离
+	 * @return
+	 */
+	public static void drawLongWord(Graphics2D graphics2D,String resource,int lineLength,int wordHigh,int baseHeight,int firstWordLeft){
+		double base1=resource.length()/lineLength;
+		int  base2=(int)(resource.length()/lineLength);
+		int row= (int)(base1*10)>base2?base2+1:base2;
+		for(int i=0;i<row;i++){
+			String temp;
+			if(i+1==row){
+				temp=resource.substring(i*lineLength,resource.length());
+			}else{
+				temp=resource.substring(i*lineLength,(i+1)*lineLength);
+			}
+			graphics2D.drawString(temp, firstWordLeft, baseHeight+i*wordHigh);
+		}
+	}
+
+	/**
+	 * 将图片缩放到指定大小并画到页面上
+	 * @param graphics2D
+	 * @param imagePath		图片路径
+	 * @param x 			X坐标
+	 * @param y				Y坐标
+	 * @param pWidth		缩放到宽度
+	 * @param pHeight		缩放到高度
+	 * @param count 		第几个图片
+	 */
+	public static void drawImage(Graphics2D graphics2D,String imagePath,int x,int y,int pWidth,int pHeight,int count) {
+		try {
+			BufferedImage bufferedImage=ImageIO.read(new File(imagePath));
+			BufferedImage target = new BufferedImage(pWidth,pHeight, BufferedImage.TYPE_INT_RGB);
+			target.getGraphics().drawImage(bufferedImage.getScaledInstance(pWidth,pHeight,bufferedImage.SCALE_SMOOTH), 0, 0, null);
+			ByteArrayOutputStream  byteArrayOutputStream=new ByteArrayOutputStream();
+			ImageIO.write(target, "JPG", byteArrayOutputStream);
+
+			graphics2D.drawImage(target,new BufferedImageOp() {
+				@Override
+				public BufferedImage filter(BufferedImage src, BufferedImage dest) {
+					return src;
+				}
+				@Override
+				public Rectangle2D getBounds2D(BufferedImage src) {
+					return null;
+				}
+				@Override
+				public BufferedImage createCompatibleDestImage(BufferedImage src, ColorModel destCM) {
+					return null;
+				}
+				@Override
+				public Point2D getPoint2D(Point2D srcPt, Point2D dstPt) {
+					return null;
+				}
+				@Override
+				public RenderingHints getRenderingHints() {
+					return null;
+				}
+			},x+(count==1?(count-1)*pWidth:(count-1)*pWidth+50),y);
+		} catch(IOException e) {
+			LogForError.logError(e);
+		}
 	}
 
 }

@@ -48,7 +48,7 @@ public class FileHandel extends Thread{
 		doFileCopyHandel();
 
 		//4.执行检查修改的报告重新上传线程
-		doFileCheckUpdateHandel();
+		//doFileCheckUpdateHandel();
 
 		//5.开始上传文件
 		int i=0;

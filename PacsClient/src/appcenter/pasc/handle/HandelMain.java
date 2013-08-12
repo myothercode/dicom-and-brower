@@ -1,5 +1,6 @@
 package appcenter.pasc.handle;
 
+import appcenter.dicom.handleDicom.SendFileMain;
 import appcenter.logHelper.LogForError;
 import appcenter.logHelper.LogForInfo;
 import appcenter.monitor.ProgramMonitorThread;
@@ -69,7 +70,13 @@ public class HandelMain extends JComponent implements ActionListener {
 			LogForError.logError(e);
 		}
 
-		BaseConfig.initConfig();
+		BaseConfig.initServerConfig();
+		if(BaseConfig.type.equals("dataBase")){
+			BaseConfig.initDatabaseConfig();
+		}else if(BaseConfig.type.equals("file")){
+			BaseConfig.initFileConfig();
+		}
+		BaseConfig.initAnalyzeConfig();
 		if(BaseConfig.runMonitor.equals("true")) {
 			new ProgramMonitorThread().start();
 		}
@@ -81,7 +88,16 @@ public class HandelMain extends JComponent implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		String cmd = e.getActionCommand();
 		if(cmd.equals("run")) {
-			BaseConfig.initConfig();
+			BaseConfig.initServerConfig();
+			if(BaseConfig.pacsType.equals("dataBase")){
+				BaseConfig.initDatabaseConfig();
+				BaseConfig.initAnalyzeConfig();
+			}else if(BaseConfig.pacsType.equals("file")){
+				BaseConfig.initFileConfig();
+			}
+			if(BaseConfig.runMonitor.equals("true")) {
+				new ProgramMonitorThread().start();
+			}
 			doHandel();
 		}
 		if(cmd.equals("stop")) {
@@ -107,6 +123,11 @@ public class HandelMain extends JComponent implements ActionListener {
 			this.fileHandel = new FileHandel();
 			this.fileHandel.start();
 		}
+
+        if("true".equalsIgnoreCase(BaseConfig.runDicomService)){
+            Thread t0=new SendFileMain();
+            t0.start();
+        }
 
 		trayIcon.setImage(images[0]);
 		trayIcon.setToolTip("服务正在运行");

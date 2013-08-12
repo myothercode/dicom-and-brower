@@ -2,12 +2,15 @@ package appcenter.pasc.handle;
 
 import appcenter.logHelper.LogForError;
 import appcenter.logHelper.LogForInfo;
+import appcenter.pasc.domain.ShareFile;
 import appcenter.pasc.domain.SharedQueue;
 import appcenter.pasc.util.BaseConfig;
 import appcenter.pasc.util.CommonUtil;
 
 import java.io.File;
 import java.io.FileFilter;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -53,7 +56,26 @@ public class FileCopyHandel extends Thread {
 				File[] children = this.getConfigFiles(file);//获得所有本地文件夹
 				if(children != null) {
 					for(File fi : children) {
-						new FileValidThread(fi).start();
+						boolean runHandel=true;
+						for(ShareFile shareFile : SharedQueue.sendFiles){
+							if(shareFile.getPatientID().equals(fi.getName())){
+								runHandel=false;
+								break;
+							}
+						}
+						if(runHandel) {
+							Method method = null;
+							try {
+								method = BaseConfig.serverFileAnalyze.getMethod(BaseConfig.analyzeFileCopyMethod, File.class);
+								method.invoke(null,fi);
+							} catch(NoSuchMethodException e) {
+								LogForError.logError(e);
+							} catch(InvocationTargetException e) {
+								LogForError.logError(e);
+							} catch(IllegalAccessException e) {
+								LogForError.logError(e);
+							}
+						}
 					}
 				}
 			} else {
